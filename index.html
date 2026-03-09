@@ -1,0 +1,501 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAM STYLE HUB | Unisex Salon &amp; Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulseSoft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .animate-pulse-soft {
+            animation: pulseSoft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        /* Hide scrollbar for clean modal overlays */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-zinc-900 antialiased selection:bg-zinc-200 flex flex-col min-h-screen relative">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-[#fafafa]/80 backdrop-blur-md border-b border-zinc-200/60 transition-all">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-lg font-semibold tracking-tighter text-zinc-900">
+                OSH
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+                <a href="#overview" class="hover:text-zinc-900 transition-colors">Overview</a>
+                <a href="#services" class="hover:text-zinc-900 transition-colors">Services &amp; Pricing</a>
+                <a href="#testimonials" class="hover:text-zinc-900 transition-colors">Reviews</a>
+            </div>
+            
+            <div class="hidden md:block">
+                <a href="https://www.google.com/maps/place/OSAM+STYLE+HUB+unisex+salon+%26+Academy/@31.9480066,75.6128509,17z/data=!3m1!4b1!4m6!3m5!1s0x391b99cd9a999d45:0x4a8fd29bb5a7f9a0!8m2!3d31.9480066!4d75.6154258!16s%2Fg%2F11h23mpg24?entry=ttu&amp;g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="bg-zinc-900 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-zinc-800 transition-colors">
+                    Visit Us
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="md:hidden flex items-center justify-center p-2 -mr-2 text-zinc-600 hover:text-zinc-900 transition-colors">
+                <iconify-icon icon="solar:hamburger-menu-linear" stroke-width="1.5" class="text-2xl"></iconify-icon>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-[#fafafa]/95 backdrop-blur-lg border-b border-zinc-200/60 shadow-sm flex flex-col px-6 py-6 gap-6 z-50">
+            <a href="#overview" class="mobile-link text-base font-medium text-zinc-600 hover:text-zinc-900 transition-colors">Overview</a>
+            <a href="#services" class="mobile-link text-base font-medium text-zinc-600 hover:text-zinc-900 transition-colors">Services &amp; Pricing</a>
+            <a href="#testimonials" class="mobile-link text-base font-medium text-zinc-600 hover:text-zinc-900 transition-colors">Reviews</a>
+            <a href="https://www.google.com/maps/place/OSAM+STYLE+HUB+unisex+salon+%26+Academy/@31.9480066,75.6128509,17z/data=!3m1!4b1!4m6!3m5!1s0x391b99cd9a999d45:0x4a8fd29bb5a7f9a0!8m2!3d31.9480066!4d75.6154258!16s%2Fg%2F11h23mpg24?entry=ttu&amp;g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="mobile-link mt-2 inline-flex justify-center bg-zinc-900 text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-zinc-800 transition-colors">
+                Visit Us
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- Hero & Overview Section -->
+        <section id="overview" class="pt-20 pb-16 px-6 animate-fade-in" style="animation-delay: 100ms;">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-12 justify-between items-start">
+                    
+                    <!-- Main Title Area -->
+                    <div class="flex-1 space-y-4">
+                        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-xs font-medium text-zinc-600 mb-2">
+                            <iconify-icon icon="solar:star-bold" class="text-zinc-800"></iconify-icon>
+                            <span>4.7</span>
+                            <span class="text-zinc-400">(372 reviews)</span>
+                            <span class="text-zinc-300 mx-1">·</span>
+                            <span>Beauty salon</span>
+                        </div>
+                        
+                        <h1 class="text-5xl md:text-6xl font-semibold tracking-tighter leading-tight text-zinc-900">
+                            OSAM STYLE HUB<br>
+                            <span class="text-3xl md:text-4xl text-zinc-500 font-medium tracking-tight">Unisex Salon &amp; Academy</span>
+                        </h1>
+                        <p class="text-lg text-zinc-400 font-medium tracking-tight mt-1">
+                            ਓਸਮ ਸਟਾਈਲ ਹਬ ਯੂਨੀਸੈਕਸ ਸਲੋਨ and Academy
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-3 pt-6">
+                            <a href="https://www.google.com/maps/place/OSAM+STYLE+HUB+unisex+salon+%26+Academy/@31.9480066,75.6128509,17z/data=!3m1!4b1!4m6!3m5!1s0x391b99cd9a999d45:0x4a8fd29bb5a7f9a0!8m2!3d31.9480066!4d75.6154258!16s%2Fg%2F11h23mpg24?entry=ttu&amp;g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-200 bg-white text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors shadow-sm">
+                                <iconify-icon icon="solar:routing-2-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                                Directions
+                            </a>
+                            <button onclick="openCallModal()" class="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-200 bg-white text-sm font-medium text-zinc-700 hover:bg-zinc-50 transition-colors shadow-sm">
+                                <iconify-icon icon="solar:phone-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                                Call
+                            </button>
+                            <button class="flex items-center justify-center w-10 h-10 rounded-lg border border-zinc-200 bg-white text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors shadow-sm cursor-not-allowed opacity-50">
+                                <iconify-icon icon="solar:bookmark-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                            </button>
+                            <button class="flex items-center justify-center w-10 h-10 rounded-lg border border-zinc-200 bg-white text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors shadow-sm cursor-not-allowed opacity-50">
+                                <iconify-icon icon="solar:share-linear" stroke-width="1.5" class="text-lg"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Info Card -->
+                    <div class="w-full md:w-80 shrink-0 bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm animate-fade-in" style="animation-delay: 200ms;">
+                        <div class="space-y-6">
+                            <div class="flex gap-4 items-start">
+                                <iconify-icon icon="solar:map-point-linear" stroke-width="1.5" class="text-xl text-zinc-400 shrink-0 mt-0.5"></iconify-icon>
+                                <div>
+                                    <p class="text-sm text-zinc-900 font-medium">Mata Rani Chowk</p>
+                                    <p class="text-sm text-zinc-500 mt-0.5">Mukerian, Punjab 144211<br>India</p>
+                                    <p class="text-xs text-zinc-400 mt-2 font-mono">WJX8+65</p>
+                                </div>
+                            </div>
+                            
+                            <div class="h-px bg-zinc-100 w-full"></div>
+
+                            <div class="flex gap-4 items-start">
+                                <iconify-icon icon="solar:clock-circle-linear" stroke-width="1.5" class="text-xl text-zinc-400 shrink-0 mt-0.5"></iconify-icon>
+                                <div>
+                                    <p class="text-sm font-medium text-red-600">Closed</p>
+                                    <p class="text-sm text-zinc-500 mt-0.5">Opens 8 am Tue</p>
+                                </div>
+                            </div>
+
+                            <div class="h-px bg-zinc-100 w-full"></div>
+
+                            <div class="flex gap-4 items-center cursor-pointer hover:bg-zinc-50 p-2 -m-2 rounded-lg transition-colors" onclick="openCallModal()">
+                                <iconify-icon icon="solar:phone-calling-linear" stroke-width="1.5" class="text-xl text-zinc-400 shrink-0"></iconify-icon>
+                                <p class="text-sm font-medium text-zinc-900">+91 93216 40004</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Pricing Data Section -->
+        <section id="services" class="py-16 px-6 bg-white border-y border-zinc-200/60 scroll-mt-16 animate-fade-in" style="animation-delay: 300ms;">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold tracking-tight text-zinc-900">Services &amp; Pricing</h2>
+                        <p class="text-sm text-zinc-500 mt-2">Fetched live from our pricing database.</p>
+                    </div>
+                    <div class="text-xs font-medium text-zinc-400 flex items-center gap-1.5 bg-zinc-50 px-3 py-1.5 rounded-md border border-zinc-100">
+                        <iconify-icon icon="solar:database-linear"></iconify-icon>
+                        Live data sync active
+                    </div>
+                </div>
+
+                <!-- Dynamic Data Container -->
+                <div id="services-container" class="space-y-12 min-h-[200px] relative">
+                    <!-- Loading State -->
+                    <div id="loading-state" class="absolute inset-0 flex flex-col items-center justify-center opacity-100 transition-opacity duration-300">
+                        <iconify-icon icon="solar:refresh-circle-linear" class="text-3xl text-zinc-300 animate-spin"></iconify-icon>
+                        <p class="text-sm text-zinc-400 mt-3 font-medium animate-pulse-soft">Loading latest prices...</p>
+                    </div>
+                    <!-- Data will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 px-6 bg-[#fafafa] scroll-mt-16 animate-fade-in" style="animation-delay: 400ms;">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-10">
+                    <h2 class="text-2xl font-semibold tracking-tight text-zinc-900">Client Reviews</h2>
+                    <p class="text-sm text-zinc-500 mt-2">Hear what our amazing customers have to say.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Review 1 -->
+                    <div class="bg-white border border-zinc-200 p-6 rounded-2xl shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-500 font-medium text-sm">ST</div>
+                            <div>
+                                <h3 class="text-sm font-medium text-zinc-900">Samrat Thakur</h3>
+                                <div class="flex items-center gap-1 text-zinc-400 text-xs mt-0.5">
+                                    <span class="flex text-amber-400">
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                    </span>
+                                    <span>· 3 weeks ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-zinc-600 flex-grow leading-relaxed">"Hi am kajal from gurdaspur Iam vist at osam style hub Mukerian I am full sastifed al services … More"</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white border border-zinc-200 p-6 rounded-2xl shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-500 font-medium text-sm">RK</div>
+                            <div>
+                                <h3 class="text-sm font-medium text-zinc-900">Ravina Kumari</h3>
+                                <div class="flex items-center gap-1 text-zinc-400 text-xs mt-0.5">
+                                    <span class="flex text-amber-400">
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                    </span>
+                                    <span>· 3 months ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-zinc-600 flex-grow leading-relaxed">"Great experience with osam style, amazing owner and very punctual people. Safe and secure place for girls, give them a try for great experience."</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-white border border-zinc-200 p-6 rounded-2xl shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-500 font-medium text-sm">NS</div>
+                            <div>
+                                <h3 class="text-sm font-medium text-zinc-900">Nandini Sharma</h3>
+                                <div class="flex items-center gap-1 text-zinc-400 text-xs mt-0.5">
+                                    <span class="flex text-amber-400">
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                    </span>
+                                    <span>· 3 months ago</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-zinc-600 flex-grow leading-relaxed">"The hair treatment was done with so much care and professionalism. I really appreciate your friendly nature and patience throughout the process. My hair feels great and I’m fully satisfied! Thank you"</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#fafafa] py-12 px-6 mt-auto border-t border-zinc-200/60">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-semibold tracking-tighter text-zinc-900">OSH</span>
+                <span class="text-sm text-zinc-400">© 2024</span>
+            </div>
+            <div class="flex items-center gap-6 text-sm text-zinc-500 font-medium">
+                <button onclick="openCallModal()" class="hover:text-zinc-900 transition-colors">Contact</button>
+                <a href="#" class="hover:text-zinc-900 transition-colors">Privacy</a>
+                <a href="#" class="hover:text-zinc-900 transition-colors">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Call Modal -->
+    <div id="call-modal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-zinc-900/40 backdrop-blur-sm" onclick="closeCallModal()"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-sm px-4">
+            <div class="bg-white rounded-2xl shadow-xl border border-zinc-200 overflow-hidden transform scale-95 transition-transform duration-300" id="call-modal-content">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 rounded-full bg-zinc-50 flex items-center justify-center border border-zinc-100">
+                            <iconify-icon icon="solar:phone-calling-linear" stroke-width="1.5" class="text-xl text-zinc-700"></iconify-icon>
+                        </div>
+                        <button onclick="closeCallModal()" class="text-zinc-400 hover:text-zinc-900 transition-colors">
+                            <iconify-icon icon="solar:close-circle-linear" stroke-width="1.5" class="text-2xl"></iconify-icon>
+                        </button>
+                    </div>
+                    <h3 class="text-lg font-semibold tracking-tight text-zinc-900">Contact Us</h3>
+                    <p class="text-sm text-zinc-500 mt-1">Call us directly to book an appointment or ask questions.</p>
+                    
+                    <div class="mt-6 flex items-center justify-between p-3 bg-zinc-50 rounded-xl border border-zinc-200">
+                        <span id="phone-text" class="text-base font-medium text-zinc-900 tracking-wide">+91 93216 40004</span>
+                        <button onclick="copyPhone()" class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-zinc-200 rounded-lg text-xs font-medium text-zinc-700 hover:bg-zinc-50 transition-colors" id="copy-btn">
+                            <iconify-icon icon="solar:copy-linear" id="copy-icon"></iconify-icon>
+                            <span id="copy-text">Copy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Hamburger Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        }
+
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close on link click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden')) {
+                if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+
+        // Modal Logic
+        const callModal = document.getElementById('call-modal');
+        const callModalContent = document.getElementById('call-modal-content');
+
+        function openCallModal() {
+            callModal.classList.remove('hidden');
+            // Trigger reflow for transition
+            void callModal.offsetWidth;
+            callModal.classList.remove('opacity-0');
+            callModalContent.classList.remove('scale-95');
+            callModalContent.classList.add('scale-100');
+        }
+
+        function closeCallModal() {
+            callModal.classList.add('opacity-0');
+            callModalContent.classList.remove('scale-100');
+            callModalContent.classList.add('scale-95');
+            setTimeout(() => {
+                callModal.classList.add('hidden');
+            }, 300);
+        }
+
+        function copyPhone() {
+            const phone = "+91 93216 40004";
+            navigator.clipboard.writeText(phone).then(() => {
+                const btnText = document.getElementById('copy-text');
+                const btnIcon = document.getElementById('copy-icon');
+                
+                btnText.innerText = 'Copied!';
+                btnIcon.setAttribute('icon', 'solar:check-circle-linear');
+                btnIcon.classList.add('text-green-600');
+                
+                setTimeout(() => {
+                    btnText.innerText = 'Copy';
+                    btnIcon.setAttribute('icon', 'solar:copy-linear');
+                    btnIcon.classList.remove('text-green-600');
+                }, 2000);
+            });
+        }
+
+        // Google Sheets Fetch Logic
+        async function fetchServicesData() {
+            // Using Google Visualization API to get standard JSON output from public sheet
+            const sheetUrl = 'https://docs.google.com/spreadsheets/d/1yxGnBEgnqRAi-z7E8euPS7LUI_WyOsvPI5490c0jtRg/gviz/tq?tqx=out:json';
+            const container = document.getElementById('services-container');
+            const loading = document.getElementById('loading-state');
+
+            try {
+                const response = await fetch(sheetUrl);
+                const text = await response.text();
+                
+                // Strip the padding wrapping the JSON to parse it securely
+                const jsonString = text.substring(47, text.length - 2);
+                const json = JSON.parse(jsonString);
+                
+                const rows = json.table.rows;
+                
+                // Grouping logic (Assuming Col 0 could be Category, Col 1 Service, Col 2 Price)
+                // If it's a simple 2 column sheet, we'll group everything under "All Services"
+                const categories = {};
+                
+                rows.forEach((row, index) => {
+                    if(!row || !row.c) return;
+                    
+                    let catName = 'All Services';
+                    let serviceName = '';
+                    let priceVal = '';
+                    
+                    // Basic heuristic: check how many columns have data
+                    const val0 = row.c[0]?.v ? String(row.c[0].v).trim() : '';
+                    const val1 = row.c[1]?.v ? String(row.c[1].v).trim() : '';
+                    const val2 = row.c[2]?.v ? String(row.c[2].v).trim() : '';
+                    
+                    // Skip entirely empty rows
+                    if(!val0 && !val1 && !val2) return;
+                    
+                    // Skip header row heuristic (if row 0 has common headers)
+                    if(index === 0 && (val0.toLowerCase().includes('category') || val0.toLowerCase().includes('service') || val1.toLowerCase().includes('price'))) return;
+
+                    if (val0 && val1 && val2) {
+                        catName = val0;
+                        serviceName = val1;
+                        priceVal = val2;
+                    } else if (val0 && val1) {
+                        serviceName = val0;
+                        priceVal = val1;
+                    } else if (val0) {
+                        serviceName = val0;
+                    }
+
+                    if(!categories[catName]) {
+                        categories[catName] = [];
+                    }
+                    
+                    categories[catName].push({
+                        name: serviceName,
+                        price: priceVal
+                    });
+                });
+
+                // Clear loading state
+                loading.classList.add('opacity-0');
+                setTimeout(() => loading.style.display = 'none', 300);
+
+                // Build HTML
+                let htmlOutput = '';
+                let delayCounter = 0;
+                
+                for (const [category, items] of Object.entries(categories)) {
+                    // Skip empty categories
+                    if(items.length === 0 || (items.length === 1 && !items[0].name)) continue;
+                    
+                    htmlOutput += `
+                        <div class="animate-fade-in opacity-0" style="animation-delay: ${delayCounter * 100}ms">
+                            <h3 class="text-sm font-medium text-zinc-400 uppercase tracking-wider mb-4 border-b border-zinc-100 pb-2">${category === 'All Services' ? 'Treatments & Pricing' : category}</h3>
+                            <ul class="flex flex-col">
+                    `;
+                    
+                    items.forEach(item => {
+                        htmlOutput += `
+                                <li class="flex items-center justify-between py-3 border-b border-zinc-100/50 hover:bg-zinc-50/50 transition-colors px-2 -mx-2 rounded-lg">
+                                    <div class="pr-4">
+                                        <p class="text-sm font-medium text-zinc-900">${item.name}</p>
+                                    </div>
+                                    <span class="text-sm font-medium text-zinc-900 whitespace-nowrap">${item.price ? '₹' + String(item.price).replace('₹', '') : 'Ask'}</span>
+                                </li>
+                        `;
+                    });
+                    
+                    htmlOutput += `
+                            </ul>
+                        </div>
+                    `;
+                    delayCounter++;
+                }
+
+                if(htmlOutput === '') {
+                    throw new Error("No data parsed");
+                }
+
+                // Append and animate
+                container.innerHTML = htmlOutput;
+
+            } catch (error) {
+                console.error('Error loading pricing data:', error);
+                loading.innerHTML = `
+                    <iconify-icon icon="solar:danger-triangle-linear" class="text-3xl text-zinc-300"></iconify-icon>
+                    <p class="text-sm text-zinc-400 mt-3 font-medium">Failed to load pricing. Please try refreshing.</p>
+                `;
+                loading.classList.remove('animate-pulse-soft');
+            }
+        }
+
+        // Initialize fetch when DOM is ready
+        document.addEventListener('DOMContentLoaded', fetchServicesData);
+
+    </script>
+
+</body></html>
